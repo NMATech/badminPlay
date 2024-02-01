@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\controllerHome;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user.login');
-});
+Route::get('/', [controllerHome::class, 'index']);
+Route::get('/regist', [controllerHome::class, 'registPage']);
+Route::get('/home', [controllerHome::class, 'homePage']);

@@ -11,7 +11,9 @@
 </head>
 
 <body>
-    <h4>Hello</h4>
+    @extends('user.partials.navbar')
+
+    @yield('content')
 </body>
 
 </html>
