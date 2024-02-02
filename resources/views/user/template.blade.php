@@ -11,9 +11,15 @@
 </head>
 
 <body>
-    @extends('user.partials.navbar')
+    <header class="bg-[#da0037]">
+        @include('user.partials.navbar')
+    </header>
 
     @yield('content')
+
+    <footer class="bg-[#444444] text-white">
+        @include('user.partials.footer')
+    </footer>
 </body>
 
 </html>

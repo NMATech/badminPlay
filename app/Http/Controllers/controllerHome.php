@@ -13,11 +13,11 @@ class controllerHome extends Controller
 
     public function registPage()
     {
-        return view('user.regist');    
+        return view('user.regist');
     }
 
     public function homePage()
     {
-        return view('user.template');
+        return view('user.home');
     }
 }
